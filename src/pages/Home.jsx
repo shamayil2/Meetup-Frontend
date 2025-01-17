@@ -51,16 +51,16 @@ const Home = () => {
                     <div className="col-md-4 my-4">
                     <div className="card" style={{width: "18rem"}}>
                   
-                    <img src={event.image} className="card-img-top" alt="..."/>
+                    <Link to={`events/${event._id}`} style={{textDecoration:"none"}}> <img src={event.image} className="card-img-top" alt="..."/></Link>
                     <p style={{padding:"5px 20px ",backgroundColor:"#00BFFF"}}>{event.eventType}</p>
                     <div className="card-body">
                         <p style={{color:"#00BFFF"}}>{new Date(event.startDate).toUTCString()}</p>
                         
-                        <Link to={`events/${event._id}`} style={{textDecoration:"none"}}><h3  style={{color:"black",padding:"0px 5px",border:"3px solid #00BFFF",borderRadius:"0.5rem"}} className="card-text">{event.title}</h3></Link>
+                        <Link to={`events/${event._id}`} style={{textDecoration:"none"}}>   <h3  style={{color:"black",padding:"0px 5px",border:"3px solid #00BFFF",borderRadius:"0.5rem"}} className="card-text">{event.title}</h3></Link>
                     </div>
                     </div>
                     </div>
-                
+                    
                 ))}
             </div>
 
