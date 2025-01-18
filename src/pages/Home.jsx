@@ -2,7 +2,7 @@ import useFetch from "../useFetch"
 import {Link} from "react-router-dom"
 import {useState} from "react"
 const Home = () => {
-    const [eventType,setEventType] = useState("Both")
+    const [eventType,setEventType] = useState("Select Event Type")
     const [searchVal,setSearchVal] = useState("")
     const {data,loading,error} = useFetch("https://meetup-backend-yl5y.vercel.app/events")
     console.log(data)
