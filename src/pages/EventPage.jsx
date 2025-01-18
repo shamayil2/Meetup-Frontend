@@ -15,7 +15,7 @@ const EventPage = () => {
             <h1 className="py-4">{data.title}</h1>
             <h5 style={{color:"#00BFFF"}}>Hosted By:</h5>
             <h3>{data.host}</h3><br/>
-            <img classNam="img-fluid" style={{width:"500px",height:"400px",borderRadius:"0.5rem"}} src={`${data.image}`} alt="" /><br/><br/>
+            <img className="img-fluid" style={{width:"500px",height:"400px",borderRadius:"0.5rem"}} src={`${data.image}`} alt="" /><br/><br/>
             <h5 style={{color:"#00BFFF"}}>Details:</h5>
             <p><b>Dress Code: </b>{data.dress}</p>
             <p><b>Age Restrictions: </b>{data.age}</p><br/>
