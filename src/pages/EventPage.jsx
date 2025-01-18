@@ -25,7 +25,7 @@ const EventPage = () => {
             ))}
             </div>
             <div className="col-md-6 mt-4">
-            <div className="container" style={{backgroundColor:"lightgray",borderRadius:"0.75rem",width:"500px",padding:"20px"}}>
+            <div className="container" style={{backgroundColor:"lightgray",borderRadius:"0.75rem",padding:"20px"}}>
                 <p className="py-2">Time : {new Date(data.startDate).toUTCString()} to {new Date(data.endDate).toUTCString()} </p>
                 <p className="py-2">Address: {data.address}</p>
                 <p className="py-2">Price: Rs.{data.price}</p>
