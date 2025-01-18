@@ -46,7 +46,7 @@ const Home = () => {
         </div>
         <section className="container py-4">
             <div className="row">
-                {filteredEvents?.map(event=>(
+                {filteredEvents?filteredEvents.map(event=>(
                     
                     <div className="col-md-4 my-4">
                     <div className="card" style={{width: "18rem"}}>
@@ -61,7 +61,7 @@ const Home = () => {
                     </div>
                     </div>
                     
-                ))}
+                )): loading && <h2 style={{color:"#00BFFF",textAlign:"center"}}>Loading...</h2>}
             </div>
 
         </section>
